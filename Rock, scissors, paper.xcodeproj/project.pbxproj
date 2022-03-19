@@ -13,6 +13,8 @@
 		B51DBBB527E6078B005889D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51DBBB327E6078B005889D3 /* Main.storyboard */; };
 		B51DBBB727E6078C005889D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51DBBB627E6078C005889D3 /* Assets.xcassets */; };
 		B51DBBBA27E6078C005889D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51DBBB827E6078C005889D3 /* LaunchScreen.storyboard */; };
+		B51DBBC227E60AD5005889D3 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51DBBC127E60AD5005889D3 /* Sign.swift */; };
+		B51DBBC427E60ADE005889D3 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51DBBC327E60ADE005889D3 /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B51DBBB627E6078C005889D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51DBBB927E6078C005889D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B51DBBBB27E6078C005889D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51DBBC127E60AD5005889D3 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
+		B51DBBC327E60ADE005889D3 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +60,15 @@
 		B51DBBAC27E6078B005889D3 /* Rock, scissors, paper */ = {
 			isa = PBXGroup;
 			children = (
-				B51DBBAD27E6078B005889D3 /* AppDelegate.swift */,
-				B51DBBAF27E6078B005889D3 /* SceneDelegate.swift */,
 				B51DBBB127E6078B005889D3 /* ViewController.swift */,
+				B51DBBC127E60AD5005889D3 /* Sign.swift */,
+				B51DBBC327E60ADE005889D3 /* GameState.swift */,
 				B51DBBB327E6078B005889D3 /* Main.storyboard */,
 				B51DBBB627E6078C005889D3 /* Assets.xcassets */,
 				B51DBBB827E6078C005889D3 /* LaunchScreen.storyboard */,
 				B51DBBBB27E6078C005889D3 /* Info.plist */,
+				B51DBBAD27E6078B005889D3 /* AppDelegate.swift */,
+				B51DBBAF27E6078B005889D3 /* SceneDelegate.swift */,
 			);
 			path = "Rock, scissors, paper";
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				B51DBBB227E6078B005889D3 /* ViewController.swift in Sources */,
 				B51DBBAE27E6078B005889D3 /* AppDelegate.swift in Sources */,
+				B51DBBC427E60ADE005889D3 /* GameState.swift in Sources */,
+				B51DBBC227E60AD5005889D3 /* Sign.swift in Sources */,
 				B51DBBB027E6078B005889D3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
