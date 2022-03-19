@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     }
     
     
-    func play(humanSign: Sign) {
+    func play(_ humanSign: Sign) {
         
         let robotSign = randomSign()
         
@@ -38,29 +38,27 @@ class ViewController: UIViewController {
         //Этот switch Скрывает кнопки человека.
         
         switch humanSign {
-            case .paper:
+        case .scissors:
+                labelPaper.isHidden = true
                 labelRock.isHidden = true
-                labelScissors.isHidden = true
-                labelPaper.isHidden = false
-
-            case .rock:
-                labelScissors.isHidden = true
+                labelScissors.isHidden = false
+        case .rock:
                 labelPaper.isHidden = true
                 labelRock.isHidden = false
-
-            case .scissors:
+                labelScissors.isHidden = true
+        case .paper:
+                labelPaper.isHidden = false
                 labelRock.isHidden = true
-                labelPaper.isHidden = true
-                labelScissors.isHidden = false
+                labelScissors.isHidden = true
         }
         
         //Включает показывать кнопку Play Again. Отключает повторное нажатие кнопок человека.
         
         labelPlayAgain.isHidden = false
         
-//        labelPaper.isEnabled = false
-//        labelRock.isEnabled = false
-//        labelScissors.isEnabled = false
+        labelPaper.isEnabled = false
+        labelRock.isEnabled = false
+        labelScissors.isEnabled = false
     }
     
     func resetForPlayAgain() {
@@ -70,7 +68,8 @@ class ViewController: UIViewController {
         labelRock.isHidden = false
         labelScissors.isHidden = false
         labelPaper.isHidden = false
-        labelPlayAgain.isHidden = true
+        
+       labelPlayAgain.isHidden = true
         
         labelRobot.text = "🤖"
         labelGameState.text = "Rock, Scissors, Paper"
@@ -100,15 +99,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonPaper(_ sender: UIButton) {
-        play(humanSign: .paper)
+        play(.paper)
     }
     
     @IBAction func buttonRock(_ sender: UIButton) {
-        play(humanSign: .rock)
+        play(.rock)
     }
     
     @IBAction func buttonScissors(_ sender: UIButton) {
-        play(humanSign: .scissors)
+        play(.scissors)
     }
 
     
